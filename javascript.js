@@ -1,4 +1,3 @@
-// console.log("Hello World!")
 console.clear();
 
 
@@ -37,27 +36,27 @@ function playGame() {
             console.log("It's a tie, play round again.");
         }
         else if (humanChoice === "rock" && computerChoice === "paper") {
-            console.log("Paper beats rock. Computer won this round");
+            console.log("Paper beats rock. Computer won this round.");
             computerScore++;
         }
         else if (humanChoice === "rock" && computerChoice === "scissors") {
-            console.log("Rock beats scissors. Human won this round");
+            console.log("Rock beats scissors. Human won this round.");
             humanScore++;
         }
         else if (humanChoice === "paper" && computerChoice === "scissors") {
-            console.log("Scissors beats paper. Computer won this round");
+            console.log("Scissors beats paper. Computer won this round.");
             computerScore++;
         }
         else if (humanChoice === "paper" && computerChoice === "rock") {
-            console.log("Paper beats rock. Human won this round");
+            console.log("Paper beats rock. Human won this round.");
             humanScore++;
         }
         else if (humanChoice === "scissors" && computerChoice === "rock") {
-            console.log("Rock beats scissors. Computer won this round");
+            console.log("Rock beats scissors. Computer won this round.");
             computerScore++;
         }
         else if (humanChoice === "scissors" && computerChoice === "paper") {
-            console.log("Scissors beats paper. Human won this round");
+            console.log("Scissors beats paper. Human won this round.");
             humanScore++;
         }
 
@@ -97,7 +96,15 @@ function playGame() {
     console.log("Human: ", humanSelection);
     playRound (humanSelection, computerSelection);
 
-
+    if (humanScore > computerScore) {
+        console.log("Human won. Total score: Computer: ", computerScore, " Human: ", humanScore);
+    }
+    else if (computerScore > humanScore) {
+        console.log("Computer won. Total score: Computer: ", computerScore, " Human: ", humanScore);
+    }
+    else {
+        console.log("It's a tie. Total score: Computer: ", computerScore, " Human: ", humanScore);
+    }
 
 }
 
