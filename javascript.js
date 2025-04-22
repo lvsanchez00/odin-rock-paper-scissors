@@ -44,7 +44,7 @@ function playGame() {
             humanScore++;
         }
         else if (humanChoice === "paper" && computerChoice === "scissors") {
-            console.log("Scissors beats paper. Computer won this round.");
+            console.log("Scissors beat paper. Computer won this round.");
             computerScore++;
         }
         else if (humanChoice === "paper" && computerChoice === "rock") {
@@ -56,7 +56,7 @@ function playGame() {
             computerScore++;
         }
         else if (humanChoice === "scissors" && computerChoice === "paper") {
-            console.log("Scissors beats paper. Human won this round.");
+            console.log("Scissors beat paper. Human won this round.");
             humanScore++;
         }
 
